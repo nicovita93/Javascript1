@@ -44,6 +44,20 @@ function calcularCuota(monto, tiempo){
         `;
         llenarTabla.appendChild(row)
     }
+
+
+    let boton = document.getElementById("btnCalcular");
+
+    boton.onmousemove = () => {
+        console.log("move")
+    }
+
+    let boton1 = document.getElementById("btnCalcular");
+
+    boton1.addEventListener("click", respuestaClick)
+
+    function respuestaClick() {
+        alert("Calculo de prestamos exitoso. En caso de querer avanzar con el mismo puede comunicarse con atencion al cliente. Gracias por elegirnos.")
+    }
+
 }
-
-
