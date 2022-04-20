@@ -1,0 +1,18 @@
+/*MAPS */
+$mapRedes:(facebook:red,instagram:blue,twitter:yellow);
+
+@each $red, $color in $mapRedes {
+    .#{$red} {
+        color: $color;
+    }
+}
+
+$estilo:(
+    color: red, 
+    tamfuente: 30px,
+);
+
+.p{
+    background-color: map-get($estilo, color );
+    font-size: map-get($estilo, tamfuente );
+}

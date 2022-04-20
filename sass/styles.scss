@@ -1,0 +1,262 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*--------Header---------*/
+@import "variables";
+
+/* vista desktop */
+@media only screen and (min-width: 1024px){
+    .navbar-expand-lg .navbar-collapse{justify-content: flex-end;}
+    .footerFlex{display: flex;justify-content: space-around;}
+    .imagenesservicios{width: 725px;display: flex;}
+    .itemcotiza{width: 800px;display: flex;}
+    }
+    
+    /* vista mobile */
+    @media only screen and (max-width: 767px){
+        .footerFlex{display: flex;flex-direction: column;}
+        .imagenesservicios{width: 200px;display: flex;}
+        .itemservicio{width: 200px;display: flex;}
+        .nosotrosp{font-size: medium;}
+        .itemcotiza{width: 200px;display: flex;}
+    }
+.body{
+    overflow-x: hidden;
+    text-align: justify;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #BEE5EB;
+}
+.header{
+    background-image: url(https://www.kayak.com.ar/news/wp-content/uploads/sites/21/2020/11/blog_header-1-1-1920x600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.header__navbar{
+    padding: 1rem;
+    list-style-type: none;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__navbar li{
+
+    margin: 10px;
+    font-size: 20px;
+    padding: 15px; 
+    color:#57686B ;
+    text-decoration: none;
+    width: 131px;
+    height: 64px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    display: inline;
+}
+.section{
+    background-color: #BEE5EB;
+    font-style: italic;
+    text-align: justify;
+    color: darkblue;
+    line-height: 30px;
+    padding: 10px;
+}
+
+.section__cuerpo{
+    background-color: #BEE5EB;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly 10px;
+    overflow-x: hidden;
+    gap: 4rem;
+}
+
+
+.h1-servicios{
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(17, 82, 221);
+    background-color: #b1e6f3;
+    text-shadow: rgb(113, 180, 255) 0 0 10px;
+    text-align: center;
+}
+.formulario{
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.article__servicios{
+    color: darkblue;
+    background-color: #BEE5EB;
+    text-align: justify;
+    line-height: 30px;
+    padding: 10px;
+}
+.h2__contacto{
+    font-size: xx-large;
+    color: rgb(17, 82, 221);
+    background-color: #b1e6f3;
+    text-shadow: rgb(113, 180, 255) 0 0 10px;
+    text-align: center; 
+}
+.section__cotiza{
+    background-color: #BEE5EB;
+    font-style: italic;
+    text-align: justify, center;
+    color: darkblue;
+    line-height: 25px;
+}
+.h1__logo{
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(17, 82, 221);
+    text-shadow: rgb(113, 180, 255) 0 0 10px;
+    text-align: center; 
+}
+.article__normativa{
+    color: darkblue;
+    background-color: #BEE5EB;
+    text-align: justify;
+    line-height: 30px;
+    list-style: circle;
+}
+.texto{
+    padding: 10 px;
+}
+.imagenesgrid{
+    display: grid;
+    justify-content: center;
+    background-color: #BEE5EB;
+    text-align: center;
+    border: black 5px solid;
+    grid-column: 1 / span 4;
+    grid-row: 1 / Line2;
+    justify-items: center;
+}
+.header{
+    background-color: #57686B;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.header__navbar{
+    padding: 1rem;
+    list-style-type: none;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__navbar li{
+
+    margin: 10px;
+    font-size: 20px;
+    padding: 15px; 
+    color:#57686B ;
+    text-decoration: none;
+    width: 131px;
+    height: 64px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    display: inline;
+}
+
+.section{
+    background-color: #BEE5EB;
+    font-style: italic;
+    text-align: justify;
+    color: darkblue;
+    line-height: 30px;
+}
+
+.section__cuerpo{
+    background-color: #BEE5EB;
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly 10px;
+    overflow-x: hidden;
+    gap: 4rem;
+}
+.footer {
+  background-color: #012e35;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #b2cfdd;
+  text-shadow: #71b4ff 0 0 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+    h3{
+      font-size: 18px;
+    }
+}
+
+.h1-servicios{
+    font-size: large;
+    color: rgb(103, 139, 216);
+    background-color: #b1e6f3;
+    text-shadow: rgb(113, 180, 255) 0 0 10px;
+    text-align: justify;
+}
+
+.article__servicios{
+    color: darkblue;
+    background-color: #BEE5EB;
+    text-align: justify;
+    line-height: 30px;
+}
+.h2__contacto{
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(17, 82, 221);
+    background-color: #b1e6f3;
+    text-shadow: rgb(113, 180, 255) 0 0 10px;
+    text-align: center; 
+}
+.section__cotiza{
+    background-color: #BEE5EB;
+    font-style: italic;
+    text-align: justify, center;
+    color: darkblue;
+    line-height: 25px;
+}
+.h1__logo{
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(17, 82, 221);
+    text-shadow: rgb(113, 180, 255) 0 0 10px;
+    text-align: center; 
+}
+.article__normativa{
+    color: darkblue;
+    background-color: #BEE5EB;
+    text-align: justify;
+    line-height: 30px;
+    list-style: circle;
+}
+.texto{
+    padding: 10 px;
+}
+.imagenesgrid{
+    display: grid;
+    background-color: #BEE5EB;
+    text-align: center;
+    border: #BEE5EB 5px solid;
+    grid-column: 1 / span 4;
+    grid-row: 1 / Line2;
+    justify-items: center;
+}
