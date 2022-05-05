@@ -45,45 +45,45 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
         <div>
             <img src="../img/alianzasestrategicas.jpg" alt="alianzas">
             <h2>Nosotros</h2>
-            <p class="nosotrosp">Somos una empresa jóven, creada para poder solucionar los problemas logisticos de nuestros clientes con la pasion de poder crear alianzas estrategicas con ellos y crear la sinergia necesaria para sus envíos.</p>
+            <p>Somos una empresa jóven, creada para poder solucionar los problemas logisticos de nuestros clientes con la pasion de poder crear alianzas estrategicas con ellos y crear la sinergia necesaria para sus envíos.</p>
             <h3>Mision</h3>
         </div>
-
     <h1 class="nosotrosp">Cotiza tu prestamo</h1>
-    <h2>Podes usar el calculador de cuotas debajo, para que siempre puedas relizar tus envios y no te quedes con las ganas.</h2>
-<div class="container">
-    <div class="row mt-3">
-        <div class="col-6">
-            <h2>Calcular tu cuota mensual</h2>
-            <div class="form-group">
-                <label for="monto">Monto</label>
-                <input type="text" class="form-control" id="monto" placeholder="Ingresar monto">
-            </div>
-            <div class="form-group">
-                <label for="tiempo">Tiempo en Meses</label>
-                <input type="text" class="form-control" id="tiempo" placeholder="Ingresar cantidad de meses">
-            </div>
-            <div class="form-group">
-                <label for="interes">Interés Mensual = 4%</label>
+    <p>Podes usar el calculador de cuotas debajo, para que siempre puedas relizar tus envios y no te quedes con las ganas.</p>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-6">
+                <h2>Calcula tu prestamo por el método francés</h2>
+                <div class="form-group">
+                    <label for="monto">Monto</label>
+                    <input type="text" class="form-control" id="monto" placeholder="Ingresar monto">
+                </div>
+                <div class="form-group">
+                    <label for="tiempo">Tiempo en Meses</label>
+                    <input type="text" class="form-control" id="tiempo" placeholder="Ingresar cantidad de meses">
+                </div>
+                <div class="form-group">
+                    <label for="interes">Interés Mensual</label>
 
-            <button type="submit" class="btn btn-primary" id="btnCalcular">Calcular</button>
-        </div>
-        <div class="col-6">
-            <table id="lista-tabla" class="table">
-                <thead>
-                    <tr>
-                        <th>Fecha</th>
-                        <th>Cuota</th>
-                        <th>Capital</th>
-                        <th>Interés</th>
-                        <th>Saldo</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
+                </div>
+                <button type="submit" class="btn btn-primary" id="btnCalcular">Calcular</button>
+            </div>
+            <div class="col-6">
+                <table id="lista-tabla" class="table">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Cuota</th>
+                            <th>Capital</th>
+                            <th>Interés</th>
+                            <th>Saldo</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
         </div>
     </div>
-</div>
 </section>
     <!--Inicio footer-->
     <footer class="footer">
@@ -111,8 +111,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
-    <script src="/js/main.js"></script>
+    <script src="/js/amortizacion.js"></script>
     <script src="/js/moment.js"></script>
 </body>
 </html>
