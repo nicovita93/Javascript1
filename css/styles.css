@@ -396,6 +396,7 @@
   text-align: justify, center;
   color: darkblue;
   line-height: 25px;
+  padding: 10px;
 }
 
 .h1__logo {
@@ -429,5 +430,9 @@
   grid-column: 1 / span 4;
   grid-row: 1 / Line2;
   justify-items: center;
+}
+.horaactual{
+  margin: left;
+  padding: 50px;
 }
 /*# sourceMappingURL=styles.css.map */

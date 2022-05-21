@@ -43,21 +43,27 @@ function calcularCuota(monto, tiempo){
         `;
         llenarTabla.appendChild(row)
     }
-    let boton = document.getElementById("btnCalcular");
+}
+
+
+let boton = document.getElementById("btnCalcular");
 
     boton.onmousemove = () => {
         console.log("move")
     }
 
-    let boton1 = document.getElementById("btnCalcular");
+    boton.addEventListener("click", () => {
+        swal({
+            title: 'Genial',
+            text: 'Has simulado tu prestamo con Éxito!',
+            icon: 'success',
+            confirm: 'Ok',
+            timer: 2000
+        })
+    })
 
-    boton1.addEventListener("click", respuestaClick)
 
-    function respuestaClick() {
-        alert("Calculo de prestamos exitoso. En caso de querer avanzar con el mismo puede comunicarse con atencion al cliente. Gracias por elegirnos.")
-    }
-    
-    function mueveReloj(){
+function mueveReloj(){
         momentoActual = new Date()
         hora = momentoActual.getHours()
         minuto = momentoActual.getMinutes()
@@ -69,7 +75,7 @@ function calcularCuota(monto, tiempo){
     
         setTimeout("mueveReloj()",1000)
     }
-    
+
     fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         body: JSON.stringify({
@@ -83,7 +89,19 @@ function calcularCuota(monto, tiempo){
     })
     .then((response) => response.json())
     .then((data) => console.log(data))
-}
 
+boton.addEventListener("click", () => {
+
+    Toastify({
+        text: "Gracias por elegirnos!",
+        duration: 4000,
+        gravity: 'bottom',
+        position: 'left',
+        style: {
+            background: 'linear-gradient(to right, #020024, #00d4ff)'
+        }
+    }).showToast();
+})
+    
 
 
